@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>CSS Positioning</title>
+        <style>
+            h2 {
+                text-transform: uppercase;
+                font-weight: lighter;
+                border-radius: 20px;
+                border: 2px solid rgb(0, 139, 42);
+                text-align: center;
+                width: 170px;
+            }
+            div {
+                right: 30px;
+                border: 3px solid rgb(199, 139, 26);
+                margin: 20px;
+            }
+            .absolute {
+                position: absolute;
+                left: 40px;
+                border: 3px solid rgba(108, 21, 239, 0.699);
+            }
+            .relative {
+                position: relative;
+                left: 100px;
+                border: 3px solid rgb(0, 255, 60);
+            }
+            .fixed {
+                position: fixed;
+                top: 0px;
+                right: 20px;
+                width: 300px;
+                border: 3px solid rgb(246, 51, 17);
+            }
+            .sticky {
+                position: sticky;
+                top: 1px;
+                right: 20px;
+                width: 100px;
+                border: 3px solid rgba(160, 9, 219, 0.76);
+            }
+        </style>
+    </head>
+    <body>
+        <centre></centre>
+        <h2>Positioning</h2>
+        <div>div with no position property</div>
+        <div class="sticky">div with sticky position property</div>
+        <div class="relative">This div element has position property: relative;
+            <div class="absolute">Absolute class div</div>
+        </div>
+        <div class="fixed">div with fixed position property</div>
+    </body>
+</html>
