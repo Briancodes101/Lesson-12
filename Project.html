@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Positioning</title>
+        <style>
+            *{
+                background-color: beige;
+            }
+             h2 {
+                text-transform: uppercase;
+                font-weight: lighter;
+                border-radius: 20px;
+                border: 2px solid rgb(0, 139, 42);
+                text-align: center;
+                width: 170px;
+                background-color: rgb(194, 218, 124);
+                opacity: 1;
+            }
+            div {
+                right: 30px;
+                border: 3px solid rgb(199, 139, 26);
+                margin: 20px;background-color: rgb(255, 127, 85);
+                opacity: 0.7;
+            }
+            .absolute {
+                position: absolute;
+                left: 40px;
+                border: 3px solid rgba(108, 21, 239, 0.699);
+                background-color: rgb(199, 113, 113);
+            }
+            .relative {
+                position: relative;
+                left: 100px;
+                border: 3px solid rgb(0, 255, 60);
+                background-color: rgb(252, 97, 128);
+            }
+            .fixed {
+                position: fixed;
+                top: 0px;
+                right: 20px;
+                width: 300px;
+                border: 3px solid rgb(246, 51, 17);
+                background-color: rgb(71, 163, 255);
+            }
+            .sticky {
+                position: sticky;
+                top: 1px;
+                right: 20px;
+                width: 100px;
+                border: 3px solid rgba(160, 9, 219, 0.76);
+                background-color: rgb(138, 224, 51);
+            }
+        </style>
+    </head>
+    <body>
+        <h2>Welcome to my website</h2>
+        <div>This section will move</div>
+        <div class="sticky">So will this section</div>
+        <div class="relative">I don't know about this one
+            <div class="absolute">I think this one will also not move</div>
+        </div>
+        <div class="fixed">This one will be kept up</div>
+    </body>
+</html>
